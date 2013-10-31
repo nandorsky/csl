@@ -1,4 +1,20 @@
 Csl::Application.routes.draw do
+  root :to => 'pages#home'
+
+  get 'knightpoint' => 'knight_point#home'
+
+  get 'dtbhome' => 'downto_basics#home'
+  
+  get 'dtbproduct' => 'downto_basics#product'
+
+  get 'dtbsearch' => 'downto_basics#dtbsearch'
+
+  get 'dashboard' => 'donor_portfolio#dashboard'
+
+  get 'blank' => 'donor_portfolio#blank'
+
+  get 'holidayapp' => 'holiday_app#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
