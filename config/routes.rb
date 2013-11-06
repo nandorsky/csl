@@ -17,7 +17,15 @@ Csl::Application.routes.draw do
 
   get 'history' => 'donor_portfolio#history'
 
+  get 'faq' => 'donor_portfolio#faqs'
+
   get 'holidayapp' => 'holiday_app#home'
+
+  get 'project' => 'donor_portfolio#projectpage'
+
+  get 'account' => 'donor_portfolio#account'
+
+  get 'contact' => 'donor_portfolio#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
