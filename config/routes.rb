@@ -15,6 +15,8 @@ Csl::Application.routes.draw do
 
   get 'ppmdsearch' => 'donor_portfolio#search'
 
+  get 'history' => 'donor_portfolio#history'
+
   get 'holidayapp' => 'holiday_app#home'
 
   # The priority is based upon order of creation:
