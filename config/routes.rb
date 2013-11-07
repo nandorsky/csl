@@ -27,6 +27,10 @@ Csl::Application.routes.draw do
 
   get 'contact' => 'donor_portfolio#contact'
 
+  get 'funds' => 'donor_portfolio#browsefunds'
+
+  get 'reports' => 'donor_portfolio#reports'  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
