@@ -1,8 +1,15 @@
 <%= render 'layouts/header' %>
+
+<script type="text/javascript" language="javascript">
+function step2() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step2_container').style.display = 'block';
+}
+</script>
 					<div class="row">					
 						<div class="col-sm-12">
 							<!-- start: TEXT FIELDS PANEL -->
-							<div class="panel panel-default">
+							<div class="panel panel-default"  >
 								<div class="panel-body">
 									<form role="form" class="form-horizontal">
 										<div class="form-group">
@@ -60,8 +67,7 @@
 											</label>
 											<div class="col-sm-9">
 										<div class="col-sm-8">
-										<a class="btn btn-blue" href="#">
-											Submit</a>
+										<input class="btn btn-success" type="button" onclick="javascript:step2();" value="Submit"/>
 
 										<a class="btn btn-red" href="#">
 											Cancel</a>
@@ -74,4 +80,23 @@
 							<!-- end: TEXT FIELDS PANEL -->
 						</div>
 					</div>
+
+					<div class="row">					
+					<div class="alert alert-block alert-success col-sm-8" id="step2_container" style="display:none; margin-left:100px;">
+										<button data-dismiss="alert" class="close" type="button">
+											×
+										</button>
+										<h4 class="alert-heading"><i class="icon-ok-sign"></i> Success!</h4>
+										<p>
+											Your message has been sent to our team. We will be in touch soon!
+										</p>
+										<p>
+											<a href="dashboard.html" class="btn btn-green">
+												Go Back to the Dashboard
+											</a>
+
+										</p>
+									</div>
+					</div>
+
 <%= render 'layouts/footer' %>

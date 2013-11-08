@@ -35,6 +35,8 @@ Csl::Application.routes.draw do
 
   get 'allocation' => 'donor_portfolio#allocation'
 
+    get 'login' => 'donor_portfolio#login'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

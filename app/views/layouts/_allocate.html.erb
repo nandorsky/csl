@@ -79,7 +79,6 @@ function step2() {
 											</label>
 											<div class="col-sm-4">
 												<select class="form-control">
-											<option >&nbsp;</option>
 											<option >Project Selected</option>
 											<option >Other Selected</option>
 											<option >Other Selected</option>
@@ -97,7 +96,7 @@ function step2() {
 												
 											</label>
 											<div class="col-sm-6" style="margin-left:280px;">
-												<input class="btn btn-success" type="button" onclick="myFunction()" value="Submit"/>
+												<input class="btn btn-success" type="button" onclick="myFunction(); javascript:step2();" value="Submit"/>
 												<a class="btn btn-light-grey" href="#">Preview</a>
 												<a class="btn btn-danger" href="#">Cancel</a>
 										</select>
@@ -117,16 +116,23 @@ function step2() {
 function myFunction()
 {
 var x;
-var r=confirm("Are you sure you'd like to make this allocation?");
+var r=confirm("Are you sure you would like to allocate $5000 to SERCA2A Gene Therapy?  This transaction may not be reversed once completed.");
 if (r==true)
   {
-  x=document.getElementById('step2_container').style.display = 'block'; 
+  x=""; 
   }
 else
   {
   x="";
   }
 document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function step2() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step2_container').style.display = 'block';
 }
 </script>
 
