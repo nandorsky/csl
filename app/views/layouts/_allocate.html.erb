@@ -138,9 +138,9 @@ function firstcancel() {
 												
 											</label>
 											<div class="col-sm-6" style="margin-left:280px;">
-												<input class="btn btn-success" type="button" onclick="myFunction(); javascript:step2();" value="Submit"/>
+												<input class="btn btn-success" type="button" onclick="myFunction();" value="Submit"/>
 												<input class="btn light-grey" type="button" onclick="javascript:step3();" value="Preview"/>
-												<input class="btn btn-danger" type="button" onclick="myCancel(); javascript:firstcancel();" value="Cancel"/>
+												<input class="btn btn-danger" type="button" onclick="myCancel();" value="Cancel"/>
 										</select>
 											</div>
 										</div>
@@ -161,13 +161,14 @@ var x;
 var r=confirm("Are you sure you would like to allocate $5000 to SERCA2A Gene Therapy?  This transaction may not be reversed once completed.");
 if (r==true)
   {
-  x=""; 
+  	document.getElementById('step1_container').style.display = 'none';
+   	document.getElementById('step2_container').style.display = 'block';; 
   }
 else
   {
-  x="";
+  	document.getElementById('step1_container').style.display = 'none';
+   	document.getElementById('step3_container').style.display = 'block';
   }
-document.getElementById("demo").innerHTML=x;
 }
 </script>
 
@@ -178,13 +179,13 @@ var x;
 var r=confirm("Are you sure you want to cancel this allocation?");
 if (r==true)
   {
-  x=""; 
+  	document.getElementById('step1_container').style.display = 'none';
+   	document.getElementById('step3_container').style.display = 'block';
   }
 else
   {
-  x="";
+
   }
-document.getElementById("demo").innerHTML=x;
 }
 </script>
 
