@@ -83,6 +83,13 @@ function cancel() {
 }
 </script>
 
+<script type="text/javascript" language="javascript">
+function firstcancel() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step3_container').style.display = 'block';
+}
+</script>
+
 
 
 
@@ -133,7 +140,7 @@ function cancel() {
 											<div class="col-sm-6" style="margin-left:280px;">
 												<input class="btn btn-success" type="button" onclick="myFunction(); javascript:step2();" value="Submit"/>
 												<input class="btn light-grey" type="button" onclick="javascript:step3();" value="Preview"/>
-												<input class="btn btn-danger" type="button" onclick="javascript:step3();" value="Cancel"/>
+												<input class="btn btn-danger" type="button" onclick="myCancel(); javascript:firstcancel();" value="Cancel"/>
 										</select>
 											</div>
 										</div>
@@ -152,6 +159,23 @@ function myFunction()
 {
 var x;
 var r=confirm("Are you sure you would like to allocate $5000 to SERCA2A Gene Therapy?  This transaction may not be reversed once completed.");
+if (r==true)
+  {
+  x=""; 
+  }
+else
+  {
+  x="";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+<script>
+function myCancel()
+{
+var x;
+var r=confirm("Are you sure you want to cancel this allocation?");
 if (r==true)
   {
   x=""; 
@@ -216,11 +240,26 @@ function step2() {
 											You are about to allocate $5000 to SERCA2A Gene Therapy.
 										</p>
 										<p>
-											<input class="btn btn-blue" type="button" onclick="myFunction(); javascript:info();" value="Submit">
+											<input class="btn btn-blue" type="button" onclick="myFunction();javascript:info();" value="Submit">
 											<input class="btn light-grey" type="button" onclick="javascript:cancel();" value="Cancel">
 										</p>
 									</div>
 
+<div class="alert alert-block alert-info fade in" id="firstcancel" style="display:none;">
+										<h4 class="alert-heading"><i class="icon-remove-sign"></i> Oh Snap!</h4>
+										<p>
+											Your allocation of $5000 to SERCA2A Gene Therapy was not successful.
+
+										</p>
+										<p>
+											<a href="dashboard.html" class="btn btn-danger">
+												Return to Portfolio Overview
+											</a>
+											<a href="allocation.html" class="btn btn-light-grey">
+												Make Another Allocation
+											</a>
+										</p>
+									</div>
 
 
 <!-- Content to be replaced -->
