@@ -49,9 +49,43 @@
 function step2() {
         document.getElementById('step1_container').style.display = 'none';
         document.getElementById('step2_container').style.display = 'block';
+}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+function step3() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step3_container').style.display = 'block';
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function step3() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step4_container').style.display = 'block';
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+function info() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step4_container').style.display = 'none';
         document.getElementById('step2_container').style.display = 'block';
 }
 </script>
+
+<script type="text/javascript" language="javascript">
+function cancel() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step4_container').style.display = 'none';
+        document.getElementById('step3_container').style.display = 'block';
+}
+</script>
+
+
+
+
 
 <!-- Allocation Amount -->
 <div class="row">
@@ -98,7 +132,7 @@ function step2() {
 											</label>
 											<div class="col-sm-6" style="margin-left:280px;">
 												<input class="btn btn-success" type="button" onclick="myFunction(); javascript:step2();" value="Submit"/>
-												<a class="btn btn-light-grey" href="#">Preview</a>
+												<input class="btn light-grey" type="button" onclick="javascript:step3();" value="Preview"/>
 												<input class="btn btn-danger" type="button" onclick="javascript:step3();" value="Cancel"/>
 										</select>
 											</div>
@@ -155,6 +189,37 @@ function step2() {
 											</a>
 										</p>
 </div>
+
+
+<div class="alert alert-block alert-danger fade in col-sm-6" id="step3_container" style="display: none;">
+										<h4 class="alert-heading"><i class="icon-remove-sign"></i> Oh Snap!</h4>
+										<p>
+											Your allocation of $5000 to SERCA2A Gene Therapy was not successful.
+
+										</p>
+										<p>
+											<a href="dashboard.html" class="btn btn-danger">
+												Return to Portfolio Overview
+											</a>
+											<a href="allocation.html" class="btn btn-light-grey">
+												Make Another Allocation
+											</a>
+										</p>
+</div>
+
+<div class="alert alert-block alert-info fade in" id="step4_container" style="display:none;">
+										<button data-dismiss="alert" class="close" type="button">
+											×
+										</button>
+										<h4 class="alert-heading"><i class="icon-info-sign"></i> Info!</h4>
+										<p>
+											You are about to allocate $5000 to SERCA2A Gene Therapy.
+										</p>
+										<p>
+											<input class="btn btn-blue" type="button" onclick="myFunction(); javascript:info();" value="Submit">
+											<input class="btn light-grey" type="button" onclick="javascript:cancel();" value="Cancel">
+										</p>
+									</div>
 
 
 
