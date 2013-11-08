@@ -1,0 +1,156 @@
+<div class="row">
+						<div class="col-md-12">
+							<!-- start: BASIC TABLE PANEL -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									
+									Portfolio Overview
+
+								</div>
+								<div class="panel-body">
+									<table class="table table-hover" id="sample-table-1">
+										<thead>
+											<tr>
+												<th class="center">Unallocated</th>
+												<th class="center">Allocated to Active Projects</th>
+												<th class="center">Allocated to Completed Projects</th>
+												<th class="center">Total Donations</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="center">$12,304.00</td>
+												<td class="center">$2,304.00</td>
+												<td class="center">$304.00</td>
+												<td class="center">$16,304.00</td>
+											</tr>
+
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- end: BASIC TABLE PANEL -->
+						</div>
+</div>
+
+<div class="rows">
+	<div class="#">
+	<ul>
+		<li>Donations must be allocated in multiples of $5,000</li>
+		<li>You can view a draft of your portfolio with the new allocations in place before finalizing the decision (s</li>
+		<li>You may allocate to individual projects or to “funds” (groups of several projects) or to any combination of these</li>
+		<li>Learn more about making allocations</li>
+	</ul>
+	</div>
+</div>
+
+
+<script type="text/javascript" language="javascript">
+function step2() {
+        document.getElementById('step1_container').style.display = 'none';
+        document.getElementById('step2_container').style.display = 'block';
+}
+</script>
+
+<!-- Allocation Amount -->
+<div class="row">
+						<div class="col-sm-6">
+							<!-- start: TEXT FIELDS PANEL -->
+							<!-- Original Content -->
+							<div class="panel panel-default" id="step1_container">
+								<div class="panel-heading">
+									Allocation
+								</div>
+								<div class="panel-body">
+									<form role="form" class="form-horizontal">
+										<div class="form-group">
+											<label class="col-sm-5 control-label" for="form-field-1">
+												Amount to Allocate (multiples of $5,000)
+											</label>
+											<div class="col-sm-4">
+												<input type="text" id="form-field-1" class="form-control">
+											</div>
+										</div>
+									</form>
+									<form role="form" class="form-horizontal">
+										<div class="form-group">
+											<label class="col-sm-5 control-label" for="form-field-1">
+												Project or Fund
+											</label>
+											<div class="col-sm-4">
+												<select class="form-control">
+											<option >&nbsp;</option>
+											<option >Project Selected</option>
+											<option >Other Selected</option>
+											<option >Other Selected</option>
+											<option >Other Selected</option>
+											<option >Other Selected</option>
+										</select>
+											</div>
+										</div>
+									</form>
+
+
+									<form role="form" class="form-horizontal">
+										<div class="form-group">
+											<label class="control-label" for="form-field-1">
+												
+											</label>
+											<div class="col-sm-6" style="margin-left:280px;">
+												<input class="btn btn-success" type="button" onclick="myFunction()" value="Submit"/>
+												<a class="btn btn-light-grey" href="#">Preview</a>
+												<a class="btn btn-danger" href="#">Cancel</a>
+										</select>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- end: TEXT FIELDS PANEL -->
+						</div>
+					</div>
+					<!-- Original Content -->
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x;
+var r=confirm("Are you sure you'd like to make this allocation?");
+if (r==true)
+  {
+  x=document.getElementById('step2_container').style.display = 'block'; 
+  }
+else
+  {
+  x="";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+<!-- Content to be replaced-->
+
+
+<div class="alert alert-block alert-success fade in col-sm-6" id="step2_container" style="display: none;">
+										<h4 class="alert-heading"><i class="icon-ok-sign"></i> Success!</h4>
+										<p>
+											Your allocation of $5000 to SERCA2A Gene Therapy was successful!
+
+										</p>
+										<p>
+											<a href="dashboard.html" class="btn btn-green">
+												Return to Portfolio Overview
+											</a>
+											<a href="allocation.html" class="btn btn-light-grey">
+												Make Another Allocation
+											</a>
+										</p>
+</div>
+
+<!-- Content to be replaced -->
+
+<!-- Post Submit End -->
+</div>
+
