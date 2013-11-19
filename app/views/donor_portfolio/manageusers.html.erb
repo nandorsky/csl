@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <!-- Template Name: Clip-One - Responsive Admin Template build with Twitter Bootstrap 3 Version: 1.0 Author: ClipTheme -->
 <!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
@@ -145,52 +147,16 @@
 										<!-- start: MAIN NAVIGATION MENU -->
 					<ul class="main-navigation-menu">
 						<li>
-							<a href="dashboard.html"><i class="clip-home-3"></i>
-								<span class="title"> My Portfolio </span><span class="selected"></span>
+							<a href="admin"><i class="clip-home-3"></i>
+								<span class="title"> Dashboard </span><span class="selected"></span>
 							</a>
 						</li>
 						<li>
-							<a href="ppmdsearch.html"><i class="clip-location"></i>
-								<span class="title">Browse Projects</span>
+							<a href="manageusers"><i class="clip-user-2"></i>
+								<span class="title">Manager Users</span>
 								<span class="selected"></span>
 							</a>
 						</li>
-						<!--<li>
-							<a href="funds.html"><i class="clip-banknote"></i>
-								<span class="title">Browse Funds</span>
-								<span class="selected"></span>
-							</a>
-						</li>-->
-						<li>
-							<a href="history.html"><i class="clip-bars"></i>
-								<span class="title">Transaction History</span>
-								<span class="selected"></span>
-							</a>
-						</li>
-						<li>
-							<a href="account.html"><i class="clip-cog-2"></i>
-								<span class="title">Manage Account</span>
-								<span class="selected"></span>
-							</a>
-						</li>
-						<li>
-							<a href="faq.html"><i class="clip-pencil"></i>
-								<span class="title">FAQs</span>
-								<span class="selected"></span>
-							</a>
-						</li>
-						<li>
-							<a href="contact.html"><i class="clip-user-2"></i>
-								<span class="title">Contact Staff</span>
-								<span class="selected"></span>
-							</a>
-						</li>
-						<!--<li>
-							<a href="reports.html"><i class="clip-tablet"></i>
-								<span class="title">Report Tool</span>
-								<span class="selected"></span>
-							</a>
-						</li>-->
 					</ul>
 					<!-- end: MAIN NAVIGATION MENU -->
 				</div>
@@ -250,3 +216,131 @@
 					</div>
 					<!-- end: PAGE HEADER -->
 					<!-- start: PAGE CONTENT -->
+<div class="row">
+						<div class="col-md-12">
+							<!-- start: BASIC TABLE PANEL -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									
+									Manager Users
+
+								</div>
+								<div class="panel-body">
+									<table class="table table-hover" id="sample-table-1">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Email Address</th>
+												<th>Balance</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+												<a href="#" rel="nofollow" target="_blank">
+													Joe Smith
+												</a></td>
+												<td>joesmith@gmail.com</td>
+												<td class="hidden-xs">$10,000</td>
+												<td class="center">
+												<div class="visible-md visible-lg hidden-sm hidden-xs">
+													<a href="#" class="btn btn-teal tooltips" data-placement="top" data-original-title="Edit"><i class="icon-edit"></i></a>
+
+													<a href="#" class="btn btn-bricky tooltips" data-placement="top" data-original-title="Remove"><i class="icon-remove icon-white"></i></a>
+												</div>
+												<div class="visible-xs visible-sm hidden-md hidden-lg">
+													<div class="btn-group">
+														<a class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" href="#">
+															<i class="icon-cog"></i> <span class="caret"></span>
+														</a>
+														<ul role="menu" class="dropdown-menu pull-right">
+															<li role="presentation">
+																<a role="menuitem" tabindex="-1" href="#">
+																	<i class="icon-edit"></i> Edit
+																</a>
+															</li>
+
+															<li role="presentation">
+																<a role="menuitem" tabindex="-1" href="#">
+																	<i class="icon-remove"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+										
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- end: BASIC TABLE PANEL -->
+						</div>
+					</div>
+						
+					<!-- end: PAGE CONTENT-->
+				</div>
+			</div>
+			<!-- end: PAGE -->
+		</div>
+		<!-- end: MAIN CONTAINER -->
+		<!-- start: FOOTER -->
+		<div class="footer clearfix">
+			<div class="footer-inner">
+				
+			</div>
+			<div class="footer-items">
+				<span class="go-top"><i class="clip-chevron-up"></i></span>
+			</div>
+		</div>
+		<!-- end: FOOTER -->
+		<div id="event-management" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title">Event Management</h4>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-light-grey">
+							Close
+						</button>
+						<button type="button" class="btn btn-danger remove-event no-display">
+							<i class='icon-trash'></i> Delete Event
+						</button>
+						<button type='submit' class='btn btn-success save-event'>
+							<i class='icon-ok'></i> Save
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- start: MAIN JAVASCRIPTS -->
+		<!--[if lt IE 9]>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/respond.min.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/blockUI/jquery.blockUI.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/iCheck/jquery.icheck.min.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/plugins/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+		<script src="http://www.cliptheme.com/demo/assets/js/main.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+			});
+		</script>
+	</body>
+	<!-- end: BODY -->
+</html>
