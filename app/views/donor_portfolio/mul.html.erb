@@ -1,3 +1,4 @@
+<%= render 'layouts/header' %>
 <div class="row">
 						<div class="col-md-12">
 							<!-- start: BASIC TABLE PANEL -->
@@ -90,9 +91,9 @@ function firstcancel() {
 }
 </script>
 
-
-
-
+							<div class="alert alert-info col-md-7">
+								Please note that your allocation will be evenly distributed amongst the projects selected.
+							</div>
 
 <!-- Allocation Amount -->
 <div class="row">
@@ -107,7 +108,7 @@ function firstcancel() {
 									<form role="form" class="form-horizontal">
 										<div class="form-group">
 											<label class="col-sm-5 control-label" for="form-field-1">
-												Amount to Allocate (multiples of $5,000)
+												Total Allocatoin 
 											</label>
 											<div class="col-sm-4">
 												<input type="text" id="form-field-1" class="form-control">
@@ -117,7 +118,23 @@ function firstcancel() {
 									<form role="form" class="form-horizontal">
 										<div class="form-group">
 											<label class="col-sm-5 control-label" for="form-field-1">
-												Project 
+												Project 1
+											</label>
+											<div class="col-sm-4">
+												<h5>Selected Project</h5>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-5 control-label" for="form-field-1">
+												Project 2
+											</label>
+											<div class="col-sm-4">
+												<h5>Selected Project</h5>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-5 control-label" for="form-field-1">
+												Project 3
 											</label>
 											<div class="col-sm-4">
 												<h5>Selected Project</h5>
@@ -152,7 +169,7 @@ function firstcancel() {
 function myFunction()
 {
 var x;
-var r=confirm("Are you sure you would like to allocate $5000 to SERCA2A Gene Therapy?  This transaction may not be reversed once completed.");
+var r=confirm("Are you sure you would like to allocate 20,000 total to Project 1, Project 2, Project 3 and Project 4?  This transaction may not be reversed once completed.");
 if (r==true)
   {
   	document.getElementById('step1_container').style.display = 'none';
@@ -196,16 +213,16 @@ function step2() {
 <div class="alert alert-block alert-success fade in col-sm-6" id="step2_container" style="display: none;">
 										<h4 class="alert-heading"><i class="icon-ok-sign"></i> Success!</h4>
 										<p>
-											Your allocation of $5000 to SERCA2A Gene Therapy was successful!
+											Your allocation of $20,000 to Project 1, Project 2, Project 3 and Project 4 was successful!
 
 										</p>
 										<p>
 											<a href="dashboard.html" class="btn btn-green">
 												Return to Portfolio Overview
 											</a>
-											<a href="allocation.html" class="btn btn-light-grey">
+											<!--<a href="allocation.html" class="btn btn-light-grey">
 												Make Another Allocation
-											</a>
+											</a>-->
 										</p>
 </div>
 
@@ -220,9 +237,7 @@ function step2() {
 											<a href="dashboard.html" class="btn btn-danger">
 												Return to Portfolio Overview
 											</a>
-											<a href="allocation.html" class="btn btn-light-grey">
-												Make Another Allocation
-											</a>
+
 										</p>
 </div>
 
@@ -250,9 +265,7 @@ function step2() {
 											<a href="dashboard.html" class="btn btn-danger">
 												Return to Portfolio Overview
 											</a>
-											<a href="allocation.html" class="btn btn-light-grey">
-												Make Another Allocation
-											</a>
+
 										</p>
 									</div>
 
@@ -262,3 +275,5 @@ function step2() {
 <!-- Post Submit End -->
 </div>
 
+
+<%= render 'layouts/footer' %>

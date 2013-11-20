@@ -41,6 +41,8 @@ Csl::Application.routes.draw do
 
   get 'manageusers' => 'donor_portfolio#manageusers'
 
+  get 'mul' => 'donor_portfolio#mul'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

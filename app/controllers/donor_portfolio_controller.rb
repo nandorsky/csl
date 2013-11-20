@@ -7,4 +7,8 @@ class DonorPortfolioController < ApplicationController
 
   def blank
   end
+
+  def multipleall
+  end
+
 end
