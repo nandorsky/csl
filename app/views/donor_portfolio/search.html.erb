@@ -59,9 +59,30 @@
 <div class="row">
 
 <div class="col-md-7" style="float:right;">
-	<a href="mul" class ="btn btn-info">Allocate Funds to Multiple Projects</a>
+	<a onclick="myFunction()" href="mul" class ="btn btn-info">Allocate Funds to Multiple Projects</a>
 </div>
 <!-- start: Search Result -->
+
+<!-- Javascript for Multiple Allocations -->
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x;
+
+var person=prompt("Please enter the total amount you'd like to allocate over the selected funds.");
+
+if (person!=null)
+  {
+  x="Hello " + person + "! How are you today?";
+  document.getElementById("demo").innerHTML=x;
+  }
+}
+</script>
+
+
 <div class="col-md-8 searchresult">
 		<div class="col-md-3 image">
 			<img src="assets/ppmdpic.png">
