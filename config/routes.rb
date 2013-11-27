@@ -43,6 +43,8 @@ Csl::Application.routes.draw do
 
   get 'mul' => 'donor_portfolio#mul'
 
+  get 'malaria' => 'pages#malarianomore'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
