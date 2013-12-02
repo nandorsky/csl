@@ -3,12 +3,6 @@ Csl::Application.routes.draw do
 
   get 'knightpoint' => 'knight_point#home'
 
-  get 'dtbhome' => 'downto_basics#home'
-  
-  get 'dtbproduct' => 'downto_basics#product'
-
-  get 'dtbsearch' => 'downto_basics#dtbsearch'
-
   get 'dashboard' => 'donor_portfolio#dashboard'
 
   get 'blank' => 'donor_portfolio#blank'
@@ -18,8 +12,6 @@ Csl::Application.routes.draw do
   get 'history' => 'donor_portfolio#history'
 
   get 'faq' => 'donor_portfolio#faqs'
-
-  get 'holidayapp' => 'holiday_app#home'
 
   get 'project' => 'donor_portfolio#projectpage'
 
