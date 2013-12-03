@@ -3,6 +3,10 @@ Csl::Application.routes.draw do
 
   get 'knightpoint' => 'knight_point#home'
 
+  get 'knightpoint2' => 'knight_point#knpage2'
+
+  get 'knightpoint1' => 'knight_point#knpage1'
+
   get 'dashboard' => 'donor_portfolio#dashboard'
 
   get 'blank' => 'donor_portfolio#blank'
