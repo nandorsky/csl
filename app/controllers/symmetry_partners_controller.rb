@@ -1,0 +1,2 @@
+class SymmetryPartnersController < ApplicationController
+end

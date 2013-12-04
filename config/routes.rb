@@ -1,6 +1,8 @@
 Csl::Application.routes.draw do
   root :to => 'pages#home'
 
+  get 'symmetry_partners' => 'symmetry_partners#sp'
+
   get 'knightpoint' => 'knight_point#home'
 
   get 'knightpoint2' => 'knight_point#knpage2'
