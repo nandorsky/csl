@@ -12,15 +12,20 @@
 		<link rel="stylesheet" type="text/css" href="http://tympanus.net/Development/FullscreenLayoutPageTransitions/css/component.css" />
 		<link rel="stylesheet" type="text/css" href="http://csldev.com/mnm/default.css" />
 		<link rel="stylesheet" type="text/css" href="http://csldev.com/mnm/component.css" />
+		<script src="jquery.backstretch.min.js"></script>
 		<script src="http://tympanus.net/Development/FullscreenLayoutPageTransitions/js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+			jQuery("body").backstretch("https://secure.malarianomore.org/page/-/po1/img/bg-home.jpg");
+			});
+		</script>
 		<style type="text/css">
 			.bl-main > section:first-child.bl-expand {
-				background-image: url("assets/malaria/mnm.jpg");
+					background-image: url("assets/malaria/mnm.jpg");
 				    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: #FBFBFB;
-    background-attachment:fixed;
-
+				    background-size: 100% auto;
+				    background-color: #FBFBFB;
+				    background-attachment:fixed;
 			}
 
 			.bl-content h2 {
@@ -29,8 +34,28 @@
 
 			.bl-content p {
 				color: #333;
+				font-size: 20px;
 			}
 
+			.bl-content {
+				width: 45%;
+				background-color: rgba(255, 255, 255, 0.9);
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.nl-form {
+				color: #333;
+				font-size: 20px;
+			}
+
+			.bl-main a {
+				color:#da5a22;
+			}
+
+			.bl-main a:hover {
+				color:#333;
+			}
 		</style>
 
 
@@ -40,6 +65,7 @@
 			<div class="container demo-1" style="height:30%;">
 				<header>
 					<h1 style="color:#333; font-family: 'Lato', Calibri, Arial, sans-serif;">RE-Solution<span>Turn your resolution into a life saving solution</span></h1>	
+					<p style="color:#333;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</header>
 			</div>
 			<div id="bl-main" class="bl-main">
@@ -49,8 +75,8 @@
 						<h2 class="bl-icon bl-icon-about">Eat Healthier</h2>
 					</div>
 					<div class="bl-content">
-						<h2>About this layout</h2>
-						<p>This responsive layout is based on an initial grid of four boxes. Once a box is clicked, it gets resized to fullscreen and the other boxes scale down and fade out. In the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down. To see it in action, open the work section and click on one of the portfolio items and navigate through them.</p>
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						<%= render 'layouts/mnm' %>
 						<!--<p>
 							<a href="http://tympanus.net/Development/ResponsiveMultiLevelMenu/"><strong>&laquo; Previous Demo</strong></a> |
