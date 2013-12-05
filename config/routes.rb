@@ -1,4 +1,7 @@
 Csl::Application.routes.draw do
+  get 'mnm' => 'malaria#home'
+
+
   root :to => 'pages#home'
 
   get 'symmetry_partners' => 'symmetry_partners#sp'
