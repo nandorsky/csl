@@ -12,20 +12,15 @@
 		<link rel="stylesheet" type="text/css" href="http://tympanus.net/Development/FullscreenLayoutPageTransitions/css/component.css" />
 		<link rel="stylesheet" type="text/css" href="http://csldev.com/mnm/default.css" />
 		<link rel="stylesheet" type="text/css" href="http://csldev.com/mnm/component.css" />
-		<script src="jquery.backstretch.min.js"></script>
 		<script src="http://tympanus.net/Development/FullscreenLayoutPageTransitions/js/modernizr.custom.js"></script>
-		<script type="text/javascript">
-			$( document ).ready(function() {
-			jQuery("body").backstretch("https://secure.malarianomore.org/page/-/po1/img/bg-home.jpg");
-			});
-		</script>
+
 		<style type="text/css">
 			.bl-main > section:first-child.bl-expand {
-					background-image: url("assets/malaria/mnm.jpg");
-				    background-repeat: no-repeat;
-				    background-size: 100% auto;
-				    background-color: #FBFBFB;
-				    background-attachment:fixed;
+				   background: url(assets/malaria/mnm.jpg) no-repeat center center fixed; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
 			}
 
 			.bl-content h2 {
@@ -41,7 +36,6 @@
 				width: 45%;
 				background-color: rgba(255, 255, 255, 0.9);
 				padding-top: 10px;
-				padding-bottom: 10px;
 			}
 
 			.nl-form {
@@ -70,7 +64,7 @@
 			</div>
 			<div id="bl-main" class="bl-main">
 		
-				<section>
+				<section class="first">
 					<div class="bl-box">
 						<h2 class="bl-icon bl-icon-about">Eat Healthier</h2>
 					</div>
@@ -184,6 +178,7 @@
 			</div>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://csldev.com/mnm/jquery.backstretch.min.js"></script>
 		<script src="http://tympanus.net/Development/FullscreenLayoutPageTransitions/js/boxlayout.js"></script>
 		<script>
 			$(function() {
