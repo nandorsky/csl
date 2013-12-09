@@ -1,16 +1,21 @@
 Csl::Application.routes.draw do
   get 'mnm' => 'malaria#home'
 
-
   root :to => 'pages#home'
 
   get 'symmetry_partners' => 'symmetry_partners#sp'
 
   get 'knightpoint' => 'knight_point#home'
 
-  get 'knightpoint2' => 'knight_point#knpage2'
+  get 'knightpoint-careers' => 'knight_point#careers'
 
-  get 'knightpoint1' => 'knight_point#knpage1'
+  get 'knightpoint-about' => 'knight_point#about'
+
+  get 'knightpoint-contracts' => 'knight_point#contracts'
+
+  get 'knightpoint-expertise' => 'knight_point#expertise'
+
+  get 'knightpoint-media' => 'knight_point#media'
 
   get 'dashboard' => 'donor_portfolio#dashboard'
 
