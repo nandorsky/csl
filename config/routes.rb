@@ -15,6 +15,8 @@ Csl::Application.routes.draw do
 
   get 'knightpoint-expertise' => 'knight_point#expertise'
 
+  get 'knightpoint-sectors' => 'knight_point#sectors'
+
   get 'knightpoint-media' => 'knight_point#media'
 
   get 'dashboard' => 'donor_portfolio#dashboard'
