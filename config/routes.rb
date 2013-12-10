@@ -5,6 +5,12 @@ Csl::Application.routes.draw do
 
   get 'symmetry_partners' => 'symmetry_partners#sp'
 
+  get 'sp-advisor' => 'symmetry_partners#sp-advisor'
+
+  get 'sp-client' => 'symmetry_partners#sp-client'
+
+  get 'sp-learnmore' => 'symmetry_partners#sp-learnmore'
+
   get 'knightpoint' => 'knight_point#home'
 
   get 'knightpoint-careers' => 'knight_point#careers'
