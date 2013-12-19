@@ -107,7 +107,35 @@
     <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/assets/fame4good/js/bootstrap.min.js"></script>
+    <script src="/assets/fame4good/js/jquery.countdown.min.js"></script>
     <script src="/assets/fame4good/js/theme.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var currentDate = new Date(),
+            finished = false,
+            availiableExamples = {
+                set35daysFromNow: 35 * 24 * 60 * 60 * 1000,
+                set5minFromNow  : 5 * 60 * 1000,
+                set1minFromNow  : 1 * 60 * 1000
+            };
+      
+            function callback(event) {
+                $this = $(this);
+                $this.find('span#'+event.type).html(event.value);
+                switch(event.type) {
+                    case "seconds":
+                    case "minutes":
+                    case "hours":
+                    case "days":
+                    case "weeks":
+                    case "daysLeft":
+                    case "finished":
+                }
+            }
+      
+            $('div#clock').countdown(availiableExamples.set35daysFromNow + currentDate.valueOf(), callback);
+        });
+    </script>
 
     <script type="text/javascript" src="/assets/fame4good/js/index-slider.js"></script>	
 </body>
