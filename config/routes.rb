@@ -1,4 +1,20 @@
 Csl::Application.routes.draw do
+  get "fame4good/home"
+
+  get "fame4good/search"
+
+  get "fame4good/campaign"
+
+  get "fame4good/howitworks"
+
+  get "fame4good/aboutus"
+
+  get "fame4good/donation"
+
+  get "fame4good/profile"
+
+  get "fame4good/register"
+
   get 'mnm' => 'malaria#home'
 
   root :to => 'pages#home'
