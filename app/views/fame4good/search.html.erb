@@ -1,2 +1,111 @@
-<h1>Fame4good#search</h1>
-<p>Find me in app/views/fame4good/search.html.erb</p>
+<%= render 'header' %> 
+    <div id="features" class="features_page">
+        <div class="container">
+            <!-- Feature Wrapper -->
+            <div class="feature_wrapper option1">
+                <div class="row subtitle">
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu
+                    </h2>
+                </div>
+
+                <div class="row feature">
+                    <div class="col-sm-6">
+                        <img src="/assets/fame4good/img/snoop.png" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6 info">
+                        <h3>
+                            
+                            An internship for a day with SNOOP
+                        </h3>
+								
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </p>
+                    </div>
+                   	<div id="coming_soon">
+								                <div class="col-sm-6 count" id="clock">
+								                    <div class="pull-left">
+								                        <!--  <div class="box">
+								                            <div class="circle">
+								                                <span id="weeks"></span>
+								                            </div>
+								                            <p>Weeks</p>
+								                        </div> -->
+								                        <div class="box last">
+								                            <div class="circle">
+								                                <span id="days"></span>
+								                            </div>
+								                            <p>Days</p>
+								                        </div>
+								                        <div class="box">
+								                            <div class="circle">
+								                                <span id="hours"></span>
+								                            </div>
+								                            <p>Hours</p>
+								                        </div>
+								                        <div class="box">
+								                            <div class="circle">
+								                                <span id="minutes"></span>
+								                            </div>
+								                            <p>Minutes</p>
+								                        </div>
+								                        <div class="box">
+								                            <div class="circle">
+								                                <span id="seconds"></span>
+								                            </div>
+								                            <p>Seconds</p>
+								                        </div>
+								                    </div>
+								                </div>     
+								         
+                </div>
+             <div class="enter">
+                <a href="#" class="btn btn-success">Enter Now</a>
+             </div>
+            </div>
+                <div class="row feature last">
+                    <div class="col-sm-6 pic-right">
+                        <img src="/assets/fame4good/img/phelps.png" class="pull-right img-responsive" />
+                    </div>
+                    <div class="col-sm-6 info info-left">
+                        <h3>
+                            A chance to play wiht dolphins wiht Michael Phelps
+                        </h3>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+<%= render 'footer' %>  
+    <script type="text/javascript">
+        $(function () {
+            var currentDate = new Date(),
+            finished = false,
+            availiableExamples = {
+                set35daysFromNow: 35 * 24 * 60 * 60 * 1000,
+                set5minFromNow  : 5 * 60 * 1000,
+                set1minFromNow  : 1 * 60 * 1000
+            };
+      
+            function callback(event) {
+                $this = $(this);
+                $this.find('span#'+event.type).html(event.value);
+                switch(event.type) {
+                    case "seconds":
+                    case "minutes":
+                    case "hours":
+                    case "days":
+                    case "weeks":
+                    case "daysLeft":
+                    case "finished":
+                }
+            }
+      
+            $('div#clock').countdown(availiableExamples.set35daysFromNow + currentDate.valueOf(), callback);
+        });
+    </script>

@@ -1,8 +1,20 @@
-
-  <!-- starts footer -->
+    <!-- starts footer -->
     <footer id="footer">
         <div class="container">
- 
+            <div class="row info">
+                <div class="col-sm-6 residence">
+                    <ul>
+                        <li>Address. City, Arlington.</li>
+                        <li>United States, Zip Code TX 76006.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 touch">
+                    <ul>
+                        <li><strong>P.</strong> 1 817 274 2933</li>
+                        <li><strong>E.</strong><a href="#"> info@fame4good.com</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="row credits">
                 <div class="col-md-12">
                     <div class="row social">
@@ -47,39 +59,10 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/assets/fame4good/js/bootstrap.min.js"></script>
     <script src="/assets/fame4good/js/jquery.countdown.min.js"></script>
     <script src="/assets/fame4good/js/theme.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            var currentDate = new Date(),
-            finished = false,
-            availiableExamples = {
-                set35daysFromNow: 35 * 24 * 60 * 60 * 1000,
-                set5minFromNow  : 5 * 60 * 1000,
-                set1minFromNow  : 1 * 60 * 1000
-            };
-      
-            function callback(event) {
-                $this = $(this);
-                $this.find('span#'+event.type).html(event.value);
-                switch(event.type) {
-                    case "seconds":
-                    case "minutes":
-                    case "hours":
-                    case "days":
-                    case "weeks":
-                    case "daysLeft":
-                    case "finished":
-                }
-            }
-      
-            $('div#clock').countdown(availiableExamples.set35daysFromNow + currentDate.valueOf(), callback);
-        });
-    </script>
-
-    <script type="text/javascript" src="/assets/fame4good/js/index-slider.js"></script>	
+    <script type="text/javascript" src="/assets/fame4good/js/index-slider.js"></script>   
 </body>
 </html>
