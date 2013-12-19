@@ -1,2 +1,89 @@
-<h1>Fame4good#campaign</h1>
-<p>Find me in app/views/fame4good/campaign.html.erb</p>
+<%= render 'header' %>  
+<div id="portfolio_tem">
+        <div class="container">
+
+		<div class="row">
+			<div class="col-md-12 title">
+				<h4>WIN A HANG OUT WITH</h4>
+				<h2>SNOOP A LOOP</h2>
+			</div>
+		</div>
+
+
+            <div class="row">
+                <div class="col-sm-8 left_box">
+                    <div class="big">
+                        <img src="/assets/fame4good/img/snoop.png" class="img-responsive" />
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <h2>Support the Cause</h2>
+                    <h3>Text</h3>
+                    <a href="/fame4good/campaign" class="btn btn-primary">I'M IN</a>
+            </div>
+
+        </div>
+<hr />
+        <div class="row">
+        	<div class="col-sm-6">
+
+        		<h2>The Prize</h2>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        	</div>
+        	<div class="col-sm-6">
+        		<h2>The Cause</h2>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare dui eu nisl mollis, ac tincidunt erat pellentesque. Aenean gravida iaculis dolor, a rhoncus diam pellentesque ut. Phasellus id augue arcu. </p>
+        	</div>
+        </div>
+<hr />
+
+<div class="row">
+	<div class="col-sm-12">
+		<h2>The More You donate, The Bigger Your Impact</h2>
+	</div>
+
+	<div class="col-sm-3">
+		<h4>The More You donate, The Bigger Your Impact</h4>
+	</div>
+
+	<div class="col-sm-9">
+		<h4>The More You donate, The Bigger Your Impact</h4>
+	</div>
+
+</div>
+
+
+    </div>
+<%= render 'footer' %>  
+    <script type="text/javascript">
+        $(function () {
+            var currentDate = new Date(),
+            finished = false,
+            availiableExamples = {
+                set35daysFromNow: 35 * 24 * 60 * 60 * 1000,
+                set5minFromNow  : 5 * 60 * 1000,
+                set1minFromNow  : 1 * 60 * 1000
+            };
+      
+            function callback(event) {
+                $this = $(this);
+                $this.find('span#'+event.type).html(event.value);
+                switch(event.type) {
+                    case "seconds":
+                    case "minutes":
+                    case "hours":
+                    case "days":
+                    case "weeks":
+                    case "daysLeft":
+                    case "finished":
+                }
+            }
+      
+            $('div#clock').countdown(availiableExamples.set35daysFromNow + currentDate.valueOf(), callback);
+        });
+    </script>
