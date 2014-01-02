@@ -15,7 +15,9 @@ Csl::Application.routes.draw do
 
   get "fame4good/register"
 
-    get "fame4good/payment"
+  get "fame4good/confirmation"
+
+  get "fame4good/payment"
 
   get 'mnm' => 'malaria#home'
 

@@ -25,4 +25,8 @@ class Fame4goodController < ApplicationController
 
   def payment
   end  
+
+  def confirmation
+  end  
+
 end
