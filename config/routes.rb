@@ -69,6 +69,8 @@ Csl::Application.routes.draw do
 
   get 'allocation' => 'donor_portfolio#allocation'
 
+  get 'project-complete' => 'donor_portfolio#project_complete'
+
   get 'login' => 'donor_portfolio#login'
 
   get 'admin' => 'donor_portfolio#admin'
