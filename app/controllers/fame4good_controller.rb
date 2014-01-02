@@ -22,4 +22,7 @@ class Fame4goodController < ApplicationController
 
   def register
   end
+
+  def payment
+  end  
 end
